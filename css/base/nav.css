@@ -1,0 +1,9 @@
+.nav-ul li:hover {
+  @apply text-primary;
+}
+.nav-ul li a {
+  @apply md+lg:text-base;
+}
+.nav-ul {
+  @apply md+lg:px-16 !important;
+}

@@ -1,0 +1,11 @@
+@import url("base/base.css");
+@import url("base/toggle.css");
+@import url("base/nav.css");
+@import url("base/home.css");
+@import url("base/responsive.css");
+@import url("base/menu.css");
+@import url("base/swiper.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

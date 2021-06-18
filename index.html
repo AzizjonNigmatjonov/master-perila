@@ -1,0 +1,843 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Бухара перила, перила" />
+  <meta name="description" content="Качественные перила в Бухаре" />
+  <title>Мастер перила</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/libs/css/vegas.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+  />
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="public/build/main.css" />
+</head>
+<body>
+  
+  <div style="display: none;" class="fixed z-20 flex items-center justify-center w-full h-full bg-gray-700 main-video-wrapper bg-opacity-70">
+    <div class="z-50 w-4/6 mx-auto main-video-iframe">
+      <iframe class="z-50 rounded-2xl" width="100%" height="75%" src="https://www.youtube.com/embed/7S7smPw9EiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <header class="relative h-screen bottom-1" id="header">
+    <div class="flex flex-col justify-between h-full">
+      <div class="bg-white bg-opacity-0">
+        <nav
+        class="container flex items-center justify-between w-full py-6 text-black "
+        >
+        <a href="index.html">
+          <img class="w-[6.5rem] logo" src="images/logo.png" alt="logo" />
+        </a>
+        
+        <ul
+        class="flex justify-between w-full px-40 font-medium text-white nav-ul 2xl:px-64"
+        >
+        <li><a href="index.html">Бош сахифа</a></li>
+        <li><a href="about.html">Биз ҳақимизда</a></li>
+        <li><a href="projects.html">Лойиҳалар</a></li>
+        <li><a href="products.html">Маҳсулотлар</a></li>
+        <li><a href="career.html">Карера</a></li>
+        <li><a href="contact.html">Aлоқа</a></li>
+      </ul>
+      <div>
+        <ul class="flex justify-between w-full">
+          <li class="inline" style="margin-left: 5px; width: 40px; height: 40px;">
+            <a href="lang/uz" style="display: flex; align-items: center; justify-content: center;" class="w-full h-full inline-block font-semibold text-black uppercase bg-white border-2 border-white rounded-full cursor-pointer hover:text-gray-600">Уз</a>
+          </li>
+          <li class="inline ml-1" style="margin-left: 5px; width: 40px; height: 40px;">
+            <a href="lang/ru" style="display: flex; align-items: center; justify-content: center;" class="w-full h-full inline-block font-semibold text-white uppercase border-2 border-white rounded-full cursor-pointer hover:text-gray-200">Ру</a>
+          </li>
+        </ul>
+      </div>
+      <a href="javascript:void(0);" class="menu-icon" onclick="openNav()">
+        <img class="w-10" src="images/icons/menu-white.svg" alt="" />
+      </a>
+    </nav>
+    <div id="myNav" class="overlay">
+      <nav class="border-b-2 border-gray-600">
+        <div
+        class="container flex items-center justify-between w-full py-6 text-white "
+        >
+        <a href="index.html">
+          <img class="w-8 logo" src="images/logo.png" alt="logo" />
+        </a>
+        <a href="lang/uz" class="font-semibold text-center uppercase cursor-pointer hover:text-gray-600">Уз</a>
+        <a href="lang/ru" class="font-semibold uppercase cursor-pointer hover:text-gray-600">Ру</a>
+        <a
+        href="javascript:void(0);"
+        style="font-size: 25px"
+        onclick="closeNav()"
+        >
+        ⨉
+      </a>
+    </div>
+  </nav>
+  <div class="container overlay-content">
+    <a href="index.html">Бош сахифа</a>
+    <a href="about.html">Биз ҳақимизда</a>
+    <a href="projects.html">Лойиҳалар</a>
+    <a href="products.html">Маҳсулотлар</a>
+    <a href="career.html">Карера</a>
+    <a href="contact.html">Aлоқа</a>
+  </div>
+</div>
+</div>
+
+<div class="container header-content">
+  <div
+  class="relative z-10 w-2/4 px-12 text-white header-card py-14 xl:bottom-12 2xl:bottom-20"
+  >
+  <div
+  style="backdrop-filter: blur(8px)"
+  class="
+  w-full
+  h-full
+  bg-primary bg-opacity-60
+  absolute
+  top-0
+  left-0
+  z-[-1]
+  rounded-xl
+  "
+  ></div>
+  <h1 class="text-4xl font-bold text-white">
+    Зангламас пулатдан ишланган махсулотлар
+  </h1>
+  <p class="py-10 leading-relaxed">
+    Улар жуда мустахкам ва йиллар давомида хизмат килади. Шу билан
+    бирга жуда жозибадор дизайнга эга.
+  </p>
+  <a
+  href="projects.html"
+  class="inline-block px-4 py-2 text-gray-800 bg-white rounded-md"
+  >
+  Проекты
+  <img
+  class="inline-block ml-2"
+  src="images/icons/iconfinder_arrow-back_header.svg"
+  alt=""
+  />
+</a>
+<button style="box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.8);" id="headerVideoBtn" type="submit" class="px-4 py-4 ml-4 text-gray-800 bg-white rounded-full ">
+  <img id="headerVideoImg" src="./images/icons/Arrow - Right 2.svg" alt="Video player">
+</button>
+</div>
+</div>
+<div></div>
+</div>
+</header>
+<main class="relative py-24">
+  <div class="container">
+    <h2 class="mb-12 text-4xl font-semibold">Биз ҳақимизда</h2>
+    <div class="grid items-center grid-cols-2 grid-rows-1 about">
+      <img src="images/index-images/about-img.jpg" alt="about-img" />
+      <div>
+        <h3 class="mb-6 text-3xl font-medium about-heading">
+          Master Perila
+        </h3>
+        <p class="leading-7">
+          Мастер перила компаняси 2014 йилда ташкил этилган. Хозирги кунда
+          ишчилар сони 40 нафардан иборат. Кӯпгина Хитой компанялари билан
+          хамкорликда иш юритади ва тӯғридан тоӯғри Хитой давлатидан
+          зангламас пўлат махсулотларини импорт қилади. Мастер перила
+          Ӯзбекистон бӯйлаб махсулотларни етказиб беради.
+        </p>
+        <br />
+        <p class="leading-7">
+          Тайёр махсулотларни бепул ӯрнатиб беради. Хозирги кунда 10000 га
+          яқин лойиҳаларини мижозларига топширган. Буларга мисол қилиб
+          "Корзика" савдо мажмуаси, Enter Engineering компаняси , Imzo
+          компаняси. Мастер перила компанясида хозирги кунда 5000 дан зиёд
+          мижозларга хизмат кўрсатган.10000 га яқин ассортиментлари бор.
+        </p>
+        <a
+        href="about.html"
+        class="inline-block px-4 py-2 mt-8 text-white rounded-md bg-primary"
+        >
+        Батафсил
+        <img
+        class="inline-block w-6"
+        src="images/icons/iconfinder_arrow-back_about.png"
+        alt=""
+        />
+      </a>
+    </div>
+  </div>
+</div>
+</main>
+<section class="container services">
+  <h2 class="mb-12 text-4xl font-semibold">Хизматлар</h2>
+  <div class="grid grid-cols-6 grid-rows-1 service-cards">
+    <div class="card">
+      <img src="images/icons/index-services/Ellipse.svg" alt="" />
+      <img src="images/icons/index-services/1.svg" alt="icon-1" />
+      <p>Энг яхши нарх кафолати</p>
+    </div>
+    <div class="card">
+      <img src="images/icons/index-services/Ellipse.svg" alt="" />
+      <img src="images/icons/index-services/2.svg" alt="icon-2" />
+      <p>Шахар бӯйлаб бепул етказиб бериш хизмати</p>
+    </div>
+    <div class="card">
+      <img src="images/icons/index-services/Ellipse.svg" alt="" />
+      <img src="images/icons/index-services/3.svg" alt="icon-3" />
+      <p>Профессионал сифат назорати</p>
+    </div>
+    <div class="card">
+      <img src="images/icons/index-services/Ellipse.svg" alt="" />
+      <img src="images/icons/index-services/4.svg" alt="icon-4" />
+      <p>Кенг товар ассортименти</p>
+    </div>
+    <div class="card">
+      <img src="images/icons/index-services/Ellipse.svg" alt="" />
+      <img src="images/icons/index-services/5.svg" alt="icon-5" />
+      <p>Бепул косултация ва улчов</p>
+    </div>
+    <div class="card">
+      <img src="images/icons/index-services/Ellipse.svg" alt="" />
+      <img src="images/icons/index-services/6.svg" alt="icon-6" />
+      <p>Ҳар бир мижоз учун индивидуал ёндашув</p>
+    </div>
+  </div>
+</section>
+<section class="container pt-24 pb-12 why-we">
+  <h2 class="mb-8 text-4xl font-semibold why-h">Нега айнан биз</h2>
+  <div class="grid grid-cols-2 grid-rows-1 why-grid">
+    <div>
+      <ul class="why">
+        <li>
+          <img src="images/icons/index-why/1.svg" alt="" />
+          <p>To’g’ridan to’gri xorijiy zavodlar bilan hamkorlik.</p>
+        </li>
+        <li>
+          <img src="images/icons/index-why/2.svg" alt="" />
+          <p>Ҳар бир мижоз учун индивидуал ёндашув.</p>
+        </li>
+        <li>
+          <img src="images/icons/index-why/3.svg" alt="" />
+          <p>
+            Ишлаб чиқаришнинг ҳар бир қадамида профессионал <br />
+            сифат назорати.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="why">
+        <li>
+          <img src="images/icons/index-why/6.svg" alt="" />
+          <p>201 маркадан 400 маркагача бўлган махсулотлар.</p>
+        </li>
+        <li>
+          <img src="images/icons/index-why/5.svg" alt="" />
+          <p>Шахар бўйлаб бепул етказиб бериш хизмати.</p>
+        </li>
+        <li>
+          <img src="images/icons/index-why/4.svg" alt="" />
+          <p>Энг яхши нарх кафолати.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="container px-32 pb-24 facts 2xl:px-64">
+  <div class="grid grid-cols-4 grid-rows-1 text-white facts-grid">
+    <div class="facts-card">
+      <div class="facts-card-overlay"></div>
+      <h3 class="text-2xl text-white">40 000</h3>
+      <p>Лойихалар</p>
+    </div>
+    <div class="facts-card">
+      <div class="facts-card-overlay"></div>
+      <h3 class="text-2xl text-white">40</h3>
+      <p>Ходимлар</p>
+    </div>
+    <div class="facts-card">
+      <div class="facts-card-overlay"></div>
+      <h3 class="text-2xl text-white">5 000</h3>
+      <p>Мижозлар</p>
+    </div>
+    <div class="facts-card">
+      <div class="facts-card-overlay"></div>
+      <h3 class="text-2xl text-white">10 000</h3>
+      <p>Махсулотлар</p>
+    </div>
+  </div>
+</section>
+<section class="container pb-24 clients-swipper">
+  <h2 class="mb-12 text-4xl font-semibold">Мижозларимизнинг козларида</h2>
+  <div style="height: 295px;" class="w-full m-0 mr-auto swiper-container mySwiper2">
+    <div  class="relative swiper-wrapper">
+      <div class="flex flex-col justify-start h-auto border border-gray-200 rounded-2xl py-6 px-6 swiper-slide">
+        <div class="flex items-center clients-swiper-header mr-auto">
+          <img src="./images/index-images/clientsfirst.png" alt="photo">
+          <div class="inline-block ml-6">
+            <h3 class="pb-2 text-xl font-bold">Кимдур Кимдуров</h3>
+            <img src="./images/index-images/Group 357.svg" alt="Photo">
+          </div>
+        </div>
+        <p style="text-align: left;" class="mt-6 text-md w-full">Aмериканский телесериал-антология в жанре ужасов;
+          каждый эпизод сериала рассказывает новую историю 
+          с другими персонажами. </p>
+          <p style="text-align: left; margin-right: auto;" class="clients-swiper-subtext pt-6">03.06.21</p>
+        </div>
+        <div class="flex flex-col justify-start h-auto border border-gray-200 rounded-2xl py-6 px-6 swiper-slide">
+          <div class="flex items-center clients-swiper-header mr-auto">
+            <img src="./images/index-images/clientsfirst.png" alt="photo">
+            <div class="inline-block ml-6">
+              <h3 class="pb-2 text-xl font-bold">Кимдур Кимдуров</h3>
+              <img src="./images/index-images/Group 357.svg" alt="Photo">
+            </div>
+          </div>
+          <p style="text-align: left;" class="mt-6 text-md w-full">Aмериканский телесериал-антология в жанре ужасов;
+            каждый эпизод сериала рассказывает новую историю 
+            с другими персонажами. </p>
+            <p style="text-align: left; margin-right: auto;" class="pt-6">03.06.21</p>
+          </div>
+          <div class="flex flex-col justify-start h-auto border border-gray-200 rounded-2xl py-6 px-6 swiper-slide">
+            <div class="flex items-center clients-swiper-header mr-auto">
+              <img src="./images/index-images/clientsfirst.png" alt="photo">
+              <div class="inline-block ml-6">
+                <h3 class="pb-2 text-xl font-bold">Кимдур Кимдуров</h3>
+                <img src="./images/index-images/Group 357.svg" alt="Photo">
+              </div>
+            </div>
+            <p style="text-align: left;" class="mt-6 text-md w-full">Aмериканский телесериал-антология в жанре ужасов;
+              каждый эпизод сериала рассказывает новую историю 
+              с другими персонажами. </p>
+              <p style="text-align: left; margin-right: auto;" class="pt-6">03.06.21</p>
+            </div>
+            <div class="flex flex-col justify-start h-auto border border-gray-200 rounded-2xl py-6 px-6 swiper-slide">
+              <div class="flex items-center clients-swiper-header mr-auto">
+                <img src="./images/index-images/clientsfirst.png" alt="photo">
+                <div class="inline-block ml-6">
+                  <h3 class="pb-2 text-xl font-bold">Кимдур Кимдуров</h3>
+                  <img src="./images/index-images/Group 357.svg" alt="Photo">
+                </div>
+              </div>
+              <p style="text-align: left;" class="mt-6 text-md w-full">Aмериканский телесериал-антология в жанре ужасов;
+                каждый эпизод сериала рассказывает новую историю 
+                с другими персонажами. </p>
+                <p style="text-align: left; margin-right: auto;" class="pt-6">03.06.21</p>
+              </div>
+              
+              
+            </div>
+            <!-- <div class="swiper-button-next"></div> -->
+          </div>
+        </section>    
+        <section class="container xs:hidden sm:hidden gallery">
+          <h2 class="mb-12 text-4xl font-semibold">Сунги ишларимиз</h2>
+          
+          <div class="grid grid-cols-3 mt-4 gap-4 xs+sm:grid-cols-1 xs+sm:gap-0">
+            
+            <a href="images/index-images/gallery/g-1.jpg" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4" 
+              src="images/index-images/gallery/g-1.jpg"
+              alt=""
+              />
+            </a>
+            
+            <a href="images/index-images/gallery/col-1-row-2.png" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4"
+              src="images/index-images/gallery/col-1-row-2.png"
+              alt=""
+              />
+            </a>
+            
+            <a href="images/index-images/gallery/g-5.jpg" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4"
+              src="images/index-images/gallery/g-5.jpg"
+              alt=""
+              />
+            </a>
+            
+          </div>
+          
+          <div class="grid grid-cols-3 mt-4 gap-4 xs+sm:grid-cols-1 xs+sm:gap-0">
+            
+            <a href="images/index-images/gallery/g-3.jpg" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4" 
+              src="images/index-images/gallery/g-3.jpg"
+              alt=""
+              />
+            </a>
+            
+            <a href="images/index-images/gallery/col-2-row-2.png" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4"
+              src="images/index-images/gallery/col-2-row-2.png"
+              alt=""
+              />
+            </a>
+            
+            <a href="images/index-images/gallery/col-2-row-3.png" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4"
+              src="images/index-images/gallery/col-2-row-3.png"
+              alt=""
+              />
+            </a>
+            
+          </div>
+          
+          <div class="grid grid-cols-3 mt-4 gap-4 xs+sm:grid-cols-1 xs+sm:gap-0">
+            
+            <a href="images/index-images/gallery/g-8.jpg" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4" 
+              src="images/index-images/gallery/g-8.jpg"
+              alt=""
+              />
+            </a>
+            
+            <a href="images/index-images/gallery/col-3-row-2.png" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4"
+              src="images/index-images/gallery/col-3-row-2.png"
+              alt=""
+              />
+            </a>
+            
+            <a href="images/index-images/gallery/g-4.jpg" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4"
+              src="images/index-images/gallery/g-4.jpg"
+              alt=""
+              />
+            </a>
+            
+          </div>
+          
+          <div class="grid grid-cols-3 mt-4 gap-4 xs+sm:grid-cols-1 xs+sm:gap-0">
+            
+            <a href="images/index-images/gallery/g-6.jpg" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4" 
+              src="images/index-images/gallery/g-6.jpg"
+              alt=""
+              />
+            </a>
+            
+            <a href="images/index-images/gallery/col-4-row-2.png" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4"
+              src="images/index-images/gallery/col-4-row-2.png"
+              alt=""
+              />
+            </a>
+            
+            <a href="images/index-images/gallery/col-4-row-3.png" class="glightbox3">
+              <img style="width: 100%; background-size: cover; object-fit: cover;"
+              class="col-span-1 rounded-lg h-[20rem]
+              md:h-[15rem]
+              xs+sm:h-[15rem]
+              xs+sm:mb-4"
+              src="images/index-images/gallery/col-4-row-3.png"
+              alt=""
+              />
+            </a>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="text-center">
+        <a
+        href="projects.html"
+        class="inline-block px-4 py-2 mx-auto mt-10 text-white rounded-md bg-primary"
+        >
+        Барча лойихалар
+      </a>
+    </div>
+  </section>
+  <section class="container gallery-mobile hidden xs+sm:block mb-12">
+    <div class="pb-10 swiper-container mySwiper h-96">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a
+          href="images/index-images/gallery/g-1.jpg"
+          class="glightbox3"
+          style="
+          background-image: url('images/index-images/gallery/g-1.jpg');
+          background-position: center;
+          background-size: cover;
+          "
+          >
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a
+        href="images/index-images/gallery/col-1-row-2.png"
+        class="glightbox3"
+        style="
+        background-image: url('images/index-images/gallery/col-1-row-2.png');
+        background-position: center;
+        background-size: cover;
+        "
+        >
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a
+      href="images/index-images/gallery/g-5.jpg"
+      class="glightbox3"
+      style="
+      background-image: url('images/index-images/gallery/g-5.jpg');
+      background-position: center;
+      background-size: cover;
+      "
+      >
+    </a>
+  </div>
+  
+  <div class="swiper-slide">
+    <a
+    href="images/index-images/gallery/g-3.jpg"
+    class="glightbox3"
+    style="
+    background-image: url('images/index-images/gallery/g-3.jpg');
+    background-position: center;
+    background-size: cover;
+    "
+    >
+  </a>
+</div>
+<div class="swiper-slide">
+  <a
+  href="images/index-images/gallery/col-2-row-2.png"
+  class="glightbox3"
+  style="
+  background-image: url('images/index-images/gallery/col-2-row-2.png');
+  background-position: center;
+  background-size: cover;
+  "
+  >
+</a>
+</div>
+<div class="swiper-slide">
+  <a
+  href="images/index-images/gallery/col-3-row-2.png"
+  class="glightbox3"
+  style="
+  background-image: url('images/index-images/gallery/col-3-row-2.png');
+  background-position: center;
+  background-size: cover;
+  "
+  >
+</a>
+</div>
+<div class="swiper-slide">
+  <a
+  href="images/index-images/gallery/g-8.jpg"
+  class="glightbox3"
+  style="
+  background-image: url('images/index-images/gallery/g-8.jpg');
+  background-position: center;
+  background-size: cover;
+  "
+  >
+</a>
+</div>
+<div class="swiper-slide">
+  <a
+  href="images/index-images/gallery/col-3-row-2.png"
+  class="glightbox3"
+  style="
+  background-image: url('images/index-images/gallery/col-3-row-2.png');
+  background-position: center;
+  background-size: cover;
+  "
+  >
+</a>
+</div>
+<div class="swiper-slide">
+  <a
+  href="images/index-images/gallery/g-4.jpg"
+  class="glightbox3"
+  style="
+  background-image: url('images/index-images/gallery/g-4.jpg');
+  background-position: center;
+  background-size: cover;
+  "
+  >
+</a>
+</div>
+<div class="swiper-slide">
+  <a
+  href="images/index-images/gallery/g-6.jpg"
+  class="glightbox3"
+  style="
+  background-image: url('images/index-images/gallery/g-6.jpg');
+  background-position: center;
+  background-size: cover;
+  "
+  >
+</a>
+</div>
+<div class="swiper-slide">
+  <a
+  href="images/index-images/gallery/col-4-row-2.png"
+  class="glightbox3"
+  style="
+  background-image: url('images/index-images/gallery/col-4-row-2.png');
+  background-position: center;
+  background-size: cover;
+  "
+  >
+</a>
+</div>
+<div class="swiper-slide">
+  <a
+  href="images/index-images/gallery/col-4-row-3.png"
+  class="glightbox3"
+  style="
+  background-image: url('images/index-images/gallery/col-4-row-3.png');
+  background-position: center;
+  background-size: cover;
+  "
+  >
+</a>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</section>
+<footer class="bg-[#303030] mt-20 xs+sm:mt-16 py-4 relative">
+  <div class="xl:pt-4 xl:pb-6 2xl:pt-4 2xl:pb-6">
+    <div
+    class="
+    footer-grid
+    py-12
+    container
+    grid grid-cols-4 grid-rows-1
+    gap-4
+    text-[#DDD]
+    "
+    >
+    <div class="logo">
+      <img class="xs+sm:mx-auto" src="images/logo.png" alt="logo" />
+    </div>
+    <div
+    class="
+    grid grid-cols-2
+    text-white
+    gap-10
+    xs+sm:grid-cols-1
+    xs+sm:text-center
+    xs+sm:gap-0
+    "
+    >
+    <ul>
+      <li><a href="index.html">Бош сахифа</a></li>
+      <li><a href="about.html">Биз ҳақимизда</a></li>
+      <li><a href="projects.html">Лойиҳалар</a></li>
+    </ul>
+    <ul>
+      <li><a href="products.html">Маҳсулотлар</a></li>
+      <li><a href="career.html">Карера</a></li>
+      <li><a href="contact.html">Aлоқа</a></li>
+    </ul>
+  </div>
+  <div class="flex flex-col justify-center text-center contact">
+    <div
+    class="flex flex-row justify-center social-media filter brightness-0"
+    >
+    <a href="https://www.facebook.com/Master-perila-103663791549336/"
+    ><img src="images/icons/social/facebook.svg" alt=""
+    /></a>
+    <a href="https://t.me/Master_Perila_Uzbekistan"
+    ><img src="images/icons/social/telegram.svg" alt=""
+    /></a>
+    <a href="https://www.instagram.com/master.perila/"
+    ><img src="images/icons/social/insta.svg" alt=""
+    /></a>
+  </div>
+  <a class="my-2" href="mailto:masterperila@gmail.com"
+  >masterperila@gmail.com</a
+  >
+  <a href="tel:+998652205999">+998 (65) 220-5999</a>
+</div>
+<div class="footer-form">
+  <h4 class="text-lg text-[#EEE] font-medium">
+    Ракамингизни колдиринг
+  </h4>
+  <input
+  type="email"
+  name="email"
+  for="submit"
+  id="email"
+  class="
+  w-9/12
+  rounded-md
+  py-[4px]
+  pl-2
+  my-3
+  bg-transparent
+  border-[#CCC] border-[1px]
+  "
+  placeholder="Ракам"
+  />
+  <button class="px-4 py-1 text-white rounded-md bg-primary">
+    Богланинг
+  </button>
+</div>
+</div>
+</div>
+<div class="text-[#AAA] footer-ref flex justify-between container">
+  <p>©2021 Master Perila</p>
+  <a href="https://mount.uz" class="hover:text-white"
+  >MOUNTAIN | IT & Design</a
+  >
+</div>
+</footer>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"
+></script>
+<script src="css/libs/js/vegas.min.js"></script>
+<script>
+  $(function () {
+    $("#header").vegas({
+      slides: [
+      { src: "images/header-1.jpg" },
+      { src: "images/header-2.jpg" },
+      { src: "images/header-3.jpg" },
+      ],
+      overlay: "css/libs/overlays/06.png",
+    });
+  });
+</script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    slidesPerView: 'auto',
+    pagination: {
+      el: ".swiper-pagination",
+      Bullets: true,
+    },
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script type="text/javascript">
+  const lightbox = GLightbox({ selector: ".glightbox3" });
+</script>
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+    document.querySelector("body").style.overflow = "hidden";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+    document.querySelector("body").style.overflow = "auto";
+  }
+</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 'auto',
+    spaceBetween: 50,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+    speed: 800,
+    lazy: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+<script>
+  const mainVideoWrapper = document.querySelector('.main-video-wrapper');
+  const header = document.querySelector('header');
+  const main = document.querySelector('main');
+  const section = document.querySelector('section');
+  const footer = document.querySelector('footer');
+  const whyWe = document.querySelector('.why-we');
+  const factsSection = document.querySelector('.facts');
+  const clientsSection = document.querySelector('.clients-swipper');
+  const gallerySection = document.querySelector('.gallery')
+  let video = document.querySelector('.main-video-wrapper inframe')
+  window.addEventListener('click', e => {
+    if (e.target == mainVideoWrapper) {
+      mainVideoWrapper.style.display = 'none';
+      header.classList.remove('active');
+      main.classList.remove('active');
+      section.classList.remove('active');
+      footer.classList.remove('active');
+      whyWe.classList.remove('active')
+      factsSection.classList.remove('active');
+      clientsSection.classList.remove('active');
+      gallerySection.classList.remove('active');
+      video.pause();
+      video.currentTime = 0;
+    }
+    if (e.target.id == 'headerVideoBtn' || e.target.id == 'headerVideoImg') {
+      mainVideoWrapper.style.display = 'block';
+      header.classList.add('active');
+      main.classList.add('active');
+      section.classList.add('active');
+      footer.classList.add('active');
+      whyWe.classList.add('active')
+      factsSection.classList.add('active');
+      clientsSection.classList.add('active');
+      gallerySection.classList.add('active');
+    }
+  });
+</script>
+</body>
+</html>

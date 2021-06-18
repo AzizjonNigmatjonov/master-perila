@@ -1,0 +1,131 @@
+.main-video-wrapper {
+  animation: videoAnimation 0.3s ease;
+}
+
+.main-video-iframe iframe {
+  animation: iframeAnimation 0.5s ease forwards;
+  margin-top: 50px;
+}
+
+@keyframes iframeAnimation {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+   transform: scale(1);
+  }
+}
+
+@keyframes (videoAnimation) {
+  0% {
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.swiper-slide {
+  width: 470px !important;
+}
+
+.swiper-button-next {
+  color: #130F26;
+}
+
+header.active {
+  filter: blur(12px);
+}
+
+main.active {
+  filter: blur(12px);
+}
+
+section.active {
+  filter: blur(12px);
+}
+
+.why-we.active {
+  filter: blur(12px);
+}
+
+.clients-swipper.active {
+  filter: blur(12px);
+}
+
+.facts.active {
+  filter: blur(12px);
+}
+
+.gallery.active {
+  filter: blur((12px));
+}
+
+footer.active {
+  filter: blur(12px);
+}
+
+.card {
+  border-width: 1px;
+  @apply flex flex-col justify-between gap-8 p-4 mr-4 text-center border-gray-400 rounded-xl;
+}
+.card img {
+  @apply mx-auto;
+}
+.card img:first-child {
+  @apply relative bottom-4;
+}
+
+.why li {
+  @apply flex items-center py-6;
+}
+.why li:not(:last-child) {
+  @apply mr-32 border-b border-primary;
+}
+.why li img {
+  @apply mr-8;
+}
+
+.facts-card {
+  border-width: 1px;
+  background-image: url("/images/index-images/facts-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  @apply relative flex flex-col justify-between gap-2 py-12 text-center rounded-xl;
+}
+.facts-card h3,
+p {
+  @apply z-10;
+}
+.facts-card-overlay {
+  @apply absolute top-0 left-0 z-0 w-full h-full opacity-50 bg-primary rounded-xl;
+}
+.facts-card:not(:last-child) {
+  @apply mr-4;
+}
+.facts-card h3 {
+  @apply font-semibold;
+}
+
+.gallery a {
+  @apply bg-center bg-no-repeat bg-cover rounded-md;
+}
+.gslide-image img {
+  @apply rounded-2xl;
+}
+
+footer ul li {
+  @apply mb-4 text-[#DDD];
+}
+
+.social-media a:not(:last-child) {
+  @apply mr-3;
+}
+
+.projects div {
+  @apply rounded-md;
+}

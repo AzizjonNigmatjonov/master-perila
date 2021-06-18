@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* 320-467
+468-767
+768-992
+992-1200
+1200-1800
+1800 > */
+html {
+  font-size: 100%;
+}
+@media only screen and (min-width: 20em) and (max-width: 29.9375em) {
+  html {
+    font-size: 90%;
+  }
+
+  .mySwiper2 {
+    height: 380px !important;
+  }
+
+  .clients-swipper {
+    overflow: hidden;
+  }
+
+  .clients-swipper h2 {
+    font-size: 30px;
+  }
+
+  .clients-swipper .mySwiper2 .swiper-slide {
+    width: 270px !important;
+    padding: 30px 20px !important;
+  }
+
+  .clients-swiper-header {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .clients-swiper-header div img {
+    width: 100px;
+  }
+
+  .clients-swiper-header div {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+
+  .clients-swiper-header img {
+    margin: 0 auto;
+  }
+
+  .mySwiper2 .swiper-slide p {
+    text-align: center !important;
+    margin: 0 auto;
+    padding-top: 15px !important;
+    width: 200px;
+  }
+
+  .products-list-selector-wrapper {
+    display: none !important;
+  }
+
+  #pipes div {
+    flex-direction: column;
+  }
+
+  #layer div {
+    flex-direction: column;
+  }
+
+  #kitchenTools {
+    margin-top: 40px;
+  }
+
+  .product-list-text {
+    margin-top: 10px;
+  }
+
+  .product-text-list li {
+    margin-top: 5px;
+  }
+
+  .product-ul-list {
+    padding-top: 0 !important;
+  }
+
+  .hdrostrelka-item {
+    padding: 0 !important;
+  }
+
+  .product-list {
+    padding-top: 0 !important;
+  }
+
+  .accessories-item {
+    padding: 0 !important;
+  }
+
+  #kitchenTools li {
+    padding: 5px !important;
+  }
+
+  #dryer li {
+    padding: 5px !important;
+  }
+
+  #hanger li {
+    padding: 5px !important;
+  }
+
+  #obstacles li {
+    padding: 5px !important;
+  }
+
+  #hdrostrelka li {
+    padding: 5px !important;
+  }
+
+  .kitchenLists {
+    padding-top: 0 !important;
+  }
+
+  #kitchenTools .kitchen-list-selector-wrapper {
+    display: flex !important;
+  }
+
+}
+@media only screen and (min-width: 30em) and (max-width: 47.9375em) {
+  html {
+    font-size: 90%;
+  }
+
+  .mySwiper2 {
+    height: 380px !important;
+  }
+
+  .clients-swipper .mySwiper2 .swiper-slide {
+    width: 270px !important;
+    padding: 30px 20px !important;
+  }
+
+  .clients-swiper-header {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .clients-swiper-header div img {
+    width: 100px;
+  }
+
+  .clients-swiper-header div {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+
+  .clients-swiper-header img {
+    margin: 0 auto;
+  }
+
+  .mySwiper2 .swiper-slide p {
+    text-align: center !important;
+    margin: 0 auto;
+    padding-top: 15px !important;
+    width: 200px;
+  }
+
+  .products {
+    padding: 30px 0px !important;
+  }
+
+  #pipes div {
+    flex-direction: column;
+  }
+
+  #layer div {
+    flex-direction: column;
+  }
+
+  #kitchenTools {
+    margin-top: 70px;
+  }
+
+  .product-image-side {
+    padding: 0 !important;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  .product-list-text {
+    margin-top: 10px;
+  }
+
+  .product-text-list li {
+    margin-top: 5px;
+  }
+
+  .product-list {
+    display: none !important;
+  }
+  
+  .product-list.active {
+    display: grid !important;
+  }
+
+  .product-ul-list {
+    padding-top: 0 !important;
+  }
+
+  .hdrostrelka-item {
+    padding: 0 !important;
+  }
+
+  .kitchenLists {
+    padding-top: 0 !important;
+  }
+
+  #kitchenTools .kitchen-list-selector-wrapper {
+    display: flex !important;
+  }
+
+}
+@media only screen and (min-width: 48em) and (max-width: 61.1875em) {
+  html {
+    font-size: 90%;
+  }
+  .product-list div {
+    flex-direction: column;
+  }
+
+  .product-list li {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .product-image-side {
+    width: 50%;
+  }
+
+  .product-text-list {
+    margin-top: 5px !important;
+    padding-top: 0 !important;
+  }
+
+  .product-text-list-last {
+    margin-top: 0px !important;
+  }
+  
+  #pipes .product-list-wrapper {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  #layer .product-list-wrapper {
+    margin-left: 0;
+  }
+
+  .product-list-text {
+    margin-top: 10px !important;
+  }
+
+  .product-text-lists-second {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .product-list-wrapper__text {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 61.25em) and (max-width: 74.9375em) {
+  html {
+    font-size: 90%;
+  }
+
+  .product-list div {
+    flex-direction: column;
+  }
+
+  .product-list li {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .product-image-side {
+    width: 50%;
+  }
+
+  .product-text-list {
+    margin-top: 5px !important;
+    padding-top: 0 !important;
+  }
+
+  .product-text-lists-second {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .product-text-list-last {
+    margin-top: 0px !important;
+  }
+
+  #pipes .product-list-wrapper {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  #layer .product-list-wrapper {
+    margin-left: 0;
+  }
+
+  .product-list-text {
+    margin-top: 10px !important;
+  }
+}
+@media only screen and (min-width: 74.9375em) and (max-width: 112.5em) {
+  html {
+    font-size: 100%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: "EXO 2", sans-serif;
+  font-size: 16px;
+}
+p {
+  font-size: 1rem;
+}
+button {
+  outline: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #303030;
+}
+
+.products {
+  overflow-x: hidden;
+}
+
+.products .container {
+  overflow: hidden;
+}
+
+.mySwiper2 .swiper-slide {
+  padding: 40px !important;
+  width:  500px !important;
+}
+
+.clients-swiper-subtext {
+  font-size: 14px;
+  color: #000000aa;
+}
+
+.product-list {
+  display: none;
+}
+
+.product-list.active {
+  display: block;
+}
+
+.product-item {
+  transition: 0.3s;
+}
+
+.product-item.active {
+  background-color: #B90004;
+  color: #ffffff;
+}
+
+.product-item:hover {
+  background-color: #B90004;
+  color: #ffffff;
+}
+
+.product-kitchen-text {
+  transition: 0.3s;
+}
+
+.product-kitchen-text:hover {
+  background-color: #B90004;
+}
+
+
+.kitchenLists {
+  display: none !important;
+}
+
+
+.kitchenLists.active {
+  display: grid !important;
+}
+
+.product-select-mini-text {
+  position: relative;
+  transition: 0.5s;
+}
+
+.product-select-mini-text::after {
+  content: '';
+  background-image: url('../../images/products/select-right.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 12.5px;
+  right: 20px;
+  width: 16px;
+  height: 16px;
+  transform: rotate(180deg);
+}
+
+.product-select-mini-text.active::after {
+  transform: rotate(360deg);
+}
+
+.product-select-mini-list {
+  animation: slideDown 0.5s ease forwards;
+}
+
+.kitchen-list-selector-wrapper {
+  display: none !important;
+}
+
+#kitchenTools .kitchen-list-selector-wrapper.active {
+  display: flex !important;
+}
+
+.product-kitchen-text-second.active {
+  border-bottom: 3px solid #B90004;
+  padding-bottom: 5px;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -800px;
+  }
+  100% {
+    top: 0px;
+  }
+}

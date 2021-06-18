@@ -1,0 +1,930 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Бухара перила, перила" />
+  <meta name="description" content="Качественные перила в Бухаре" />
+  <title>Мастер перила</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  
+  <link rel="stylesheet" href="css/tailwind.css" />
+  <link rel="stylesheet" href="public/build/main.css" />
+</head>
+<body id="body">
+  <header
+  class="relative bg-center bg-cover bottom-1"
+  id="header"
+  style="background-image: url('images/products.jpg')"
+  >
+  <div class="flex flex-col justify-between">
+    <nav
+    class="container flex items-center justify-between w-full py-6 mx-auto text-white "
+    >
+    <a href="index.html">
+      <img class="w-[6.5rem] logo" src="images/logo.png" alt="logo" />
+    </a>
+    
+    <ul
+    class="flex justify-between w-full px-40 font-normal  nav-ul 2xl:px-64"
+    >
+    <li><a href="about.html">Биз ҳақимизда</a></li>
+    <li><a href="projects.html">Лойиҳалар</a></li>
+    <li><a href="accessories.html">Аксессуарлар</a></li>
+    <li><a href="products.html">Маҳсулотлар</a></li>
+    <li><a href="career.html">Карера</a></li>
+    <li><a href="contact.html">Aлоқа</a></li>
+  </ul>
+  <div>
+    <ul class="flex justify-between w-full">
+        <li class="inline" style="margin-left: 5px; width: 40px; height: 40px;">
+          <a href="lang/uz" style="display: flex; align-items: center; justify-content: center;" class="w-full h-full inline-block font-semibold text-black uppercase bg-white border-2 border-white rounded-full cursor-pointer hover:text-gray-600">Уз</a>
+        </li>
+        <li class="inline ml-1" style="margin-left: 5px; width: 40px; height: 40px;">
+            <a href="lang/ru" style="display: flex; align-items: center; justify-content: center;" class="w-full h-full inline-block font-semibold text-white uppercase border-2 border-white rounded-full cursor-pointer hover:text-gray-200">Ру</a>
+       </li>
+   </ul>
+</div>
+  <a href="javascript:void(0);" class="menu-icon" onclick="openNav()">
+    <img class="w-10" src="images/icons/menu-white.svg" alt="" />
+  </a>
+</nav>
+<div id="myNav" class="overlay">
+  <nav class="border-b-2 border-gray-600">
+    <div
+    class="container flex items-center justify-between w-full py-6 mx-auto text-white "
+    >
+    <a href="index.html">
+      <img class="w-8 logo" src="images/logo.png" alt="logo" />
+    </a>
+    <a href="lang/uz" class="font-semibold text-center uppercase cursor-pointer hover:text-gray-600">Уз</a>
+                        <a href="lang/ru" class="font-semibold uppercase cursor-pointer hover:text-gray-600">Ру</a>
+    <a
+    href="javascript:void(0);"
+    style="font-size: 25px"
+    onclick="closeNav()"
+    >
+    ⨉
+  </a>
+</div>
+</nav>
+<div class="container mx-auto overlay-content">
+  <a href="about.html">Биз ҳақимизда</a>
+  <a href="projects.html">Лойиҳалар</a>
+  <a href="accessories.html">Аксессуарлар</a>
+  <a href="products.html">Маҳсулотлар</a>
+  <a href="career.html">Карера</a>
+  <a href="contact.html">Aлоқа</a>
+</div>
+</div>
+</div>
+<div class="text-center text-white">
+  <p class="pt-12 pb-[.75rem] xs+sm:pt-6">
+    <a class="hover:underline" href="index.html">Бош сахифа</a> →
+    Махсулотлар
+  </p>
+  <h3 class="font-semibold text-4xl pb-24 xs+sm:pb-20 text-white">
+    Махсулотлар
+  </h3>
+</div>
+</header>
+
+<div style="background-color: #B90004; width: 245px;" class="mx-auto mt-16 product-select-mini-header rounded-md hidden xs+sm:block">
+  <p style="color: #EBEFEE;" class="product-select-mini-text py-2 px-4 text-lg">Ошхона жихозлари</p>
+</div>
+
+<div style="position: absolute; height: 100%; z-index: 100;" class="product-select-mini-wrapper w-full hidden">
+  <ul style="width: 245px; position: absolute; transform: translateX(-50%); left: 50%; top: 0px; background-color: rgba(255, 255, 255,  .95); box-shadow: 0px 5px 10px 0px rgba(34, 60, 80, 0.2); border-bottom-right-radius: 7px; border-bottom-left-radius: 7px;" class="product-select-mini-list mx-auto">
+    <li style="padding-top: 20px;" data-target="pipes" class=" text-center product-select-mini-item cursor-pointer">
+      Трубалар ва Профиллар
+    </li>
+    <li style="margin-top: 20px;" data-target="accessories" class=" text-center product-select-mini-item cursor-pointer">
+      Аксессуарлар
+    </li>
+    <li style="margin-top: 20px;" data-target="kitchenTools" class=" text-center product-select-mini-item cursor-pointer ">
+      Ошхона жихозлари
+    </li>
+    <li style="margin-top: 20px;" data-target="dryer" class=" text-center product-select-mini-item  cursor-pointer">
+      Куритгич
+    </li>
+    <li style="margin-top: 20px;" data-target="hanger" class=" text-center product-select-mini-item  cursor-pointer">
+      Илгич
+    </li>
+    <li style="margin-top: 20px;" data-target="obstacles" class=" text-center product-select-mini-item  cursor-pointer">
+      Тосиклар
+    </li>
+    <li style="margin-top: 20px;" data-target="layer" class=" text-center product-select-mini-item  cursor-pointer">
+      Лист
+    </li>
+    <li style="margin-top: 20px; padding-bottom: 20px;" data-target="hdrostrelka " class=" text-center product-select-mini-item  cursor-pointer">
+      Гидрострелка
+    </li>
+  </ul>
+</div>
+
+<main class="relative py-24 products">
+  <div class="container flex">
+    
+    <div class="flex flex-col xs+sm:hidden">
+      <p class="text-xl font-semibold bg-[#303030] inline-block text-center py-4 px-6 rounded-xl text-white">Махсулотларимиз</p>
+      <ul class="border inline-block rounded-xl px-6 py-6">
+        <li data-target="pipes" class="border py-2 px-4 rounded-xl product-item cursor-pointer">
+          Трубалар ва Профиллар
+        </li>
+        <li data-target="accessories" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+          Аксессуарлар
+        </li>
+        <li data-target="kitchenTools" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer active" style="width: 220px;">
+          Ошхона жихозлари
+        </li>
+        <li data-target="dryer" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+          Куритгич
+        </li>
+        <li data-target="hanger" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+          Илгич
+        </li>
+        <li data-target="obstacles" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+          Тосиклар
+        </li>
+        <li data-target="layer" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+          Лист
+        </li>
+        <li data-target="hdrostrelka " class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+          Гидрострелка
+        </li>
+      </ul>
+    </div>
+    
+    <!-- turba -->
+    <div id="pipes" class="pl-8 xs+sm:pl-0 product-list">
+      <div class="flex xl:flex-col product-ul-list" style="padding-top: 55px;">
+        <div class="product-image-side border rounded-lg" style="padding: 40px 20px;">
+          <img width="" src="./images/products/pipes/pipe1.png" alt="">
+        </div>
+        <div class="ml-6 product-list-wrapper">
+          <p class="text-lg product-list-text">Трубаларнинг ташки диаметри (мм)</p>
+          <ul class="w-full product-text-list" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">9.5&10</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">12</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">12,7</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">16</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">19</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">22</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">25</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">32</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">38</li>
+          </ul>
+          <ul class="w-full product-text-list product-text-lists-second" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">51</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">60</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">63</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">76</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">89</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">102</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">114</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">127</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">159</li>
+          </ul>
+          <p class="mt-4 text-lg product-list-text">Трубаларнинг қалинлиги (мм)</p>
+          <ul class="w-full product-text-list" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">0,4</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">0,6</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">0,7</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">0,9</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">1,1</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">1,4</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">1,6</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">1,9</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">2,4</li>
+          </ul>
+          <p class="mt-4 text-lg product-list-text">Трубаларнинг узунлиги (мм)</p>
+          <ul class="w-full product-text-list" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 15px;">5800</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="flex xl:flex-col" style="padding-top: 50px;">
+        <div class="product-image-side border rounded-lg" style="padding: 40px 0px;">
+          <img width="" src="./images/products/pipes/pipe2.png" alt="">
+        </div>
+        <div class="ml-6 product-list-wrapper">
+          <p class="text-lg product-list-text">Профилларнинг ташқи ўлчовлари (мм)</p>
+          <ul class="w-full product-text-list" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">15*15</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">20*10</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">20*20</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">22*22</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">30*20</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">25*13</li>
+          </ul>
+          <ul class="w-full product-text-list" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">25*25</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">30*15</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">30*30</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">38*25</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">38*38</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">40*10</li>
+          </ul>
+          <ul class="w-full product-text-list" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">40*20</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">40*40</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">50*10</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">50*20</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">50*25</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">50*50</li>
+          </ul>
+          <ul class="w-full product-text-list" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">60*40</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">75*45</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">80*80</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">100*50</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">100*100</li>
+          </ul>
+          <p class="mt-4 text-lg product-list-text">Профилларнинг қалинлиги (мм)</p>
+          <ul class="w-full product-text-list" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">0,4</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">0,6</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">0,7</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">0,9</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">1,1</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">1,4</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">1,6</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">1,9</li>
+            <li class="inline-block rounded-2xl border ml-1" style="background-color: #FBFBFB; padding: 5px 15px;">2,4</li>
+          </ul>
+          <p class="mt-4 text-lg product-list-text">Профилларнинг узунлиги (мм)</p>
+          <ul class="w-full product-text-list" style="padding-top: 7px;">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 15px;">5800</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- list -->
+    <div id="layer" class="pl-8 xs+sm:pl-0 product-list">
+      <div class="flex xl:flex-col product-ul-list" style="padding-top: 55px;">
+        <div class="product-image-side border rounded-lg" style="padding: 20px;">
+          <img width="" src="./images/products/pipes/col11.png" alt="">
+        </div>
+        <div class="ml-6 py-6 product-list-wrapper">
+          <h2 class="text-lg font-semibold">201 Матовый</h2>
+          <p class="mt-10 product-list-text">Қалинлиги</p>
+          <ul class="mt-4 w-full product-text-list">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">0,4</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,6</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,8</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">1,0</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">1,2</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">1,5</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">1,8</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">2,0</li>
+          </ul>
+          <ul class="mt-4 product-text-list-last">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">2,5</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">3,0</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">4,0</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="flex xl:flex-col" style="padding-top: 30px;">
+        <div class="product-image-side border rounded-lg" style="padding: 20px 17px;">
+          <img width="" src="./images/products/pipes/col2.png" alt="">
+        </div>
+        <div class="ml-6 py-6">
+          <h2 class="text-lg font-semibold">201 Глянцовый</h2>
+          <p class="mt-10 product-list-text">Қалинлиги</p>
+          <ul class="mt-4 w-full product-text-list">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">0,4</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,6</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,8</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">1,0</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">1,2</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">1,5</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">1,8</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">2,0</li>
+          </ul>
+          <ul class="mt-4 product-text-list-last">
+            <li class="inline-block rounded-2xl border" style="background-color: #FBFBFB; padding: 5px 20px;">2,5</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">3,0</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="flex xl:flex-col" style="padding-top: 30px;">
+        <div class="product-image-side border rounded-lg" style="padding: 20px 30px;">
+          <img width="" src="./images/products/pipes/col3.png" alt="">
+        </div>
+        <div class="ml-6 py-6">
+          <h2 class="text-lg font-semibold">430 Матовый</h2>
+          <p class="mt-10 product-list-text">Қалинлиги</p>
+          <ul class="mt-4 w-full product-text-list">
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,6</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,8</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="flex xl:flex-col" style="padding-top: 30px;">
+        <div class="product-image-side border rounded-lg" style="padding: 40px 38px;">
+          <img width="" src="./images/products/pipes/col4.png" alt="">
+        </div>
+        <div class="ml-6 py-6">
+          <h2 class="text-lg font-semibold">430 Глянцовый</h2>
+          <p class="mt-10 product-list-text">Қалинлиги</p>
+          <ul class="mt-4 w-full product-text-list">
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,6</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,8</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="flex xl:flex-col" style="padding-top: 30px;">
+        <div class="product-image-side border rounded-lg" style="padding: 30px 22px;">
+          <img width="" src="./images/products/pipes/col5.png" alt="">
+        </div>
+        <div class="ml-6 py-6">
+          <h2 class="text-lg font-semibold">201 Gold</h2>
+          <p class="mt-10 product-list-text">Қалинлиги</p>
+          <ul class="mt-4 w-full product-text-list">
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,6</li>
+            <li class="inline-block rounded-2xl border ml-2" style="background-color: #FBFBFB; padding: 5px 20px;">0,7</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- // kitchen -->
+    <div id="kitchenTools" class="pl-8 xs+sm:pl-0 product-list active">
+      
+      <div class="xs+sm:hidden">
+        <p data-target="kitchenTable" class="text-md font-normal bg-[#303030] inline-block py-2 px-6 rounded-xl text-white product-kitchen-text cursor-pointer">Стол</p>
+        <p data-target="kitchenCupboard" class="text-md ml-2 font-normal bg-[#303030] inline-block py-2 px-6 rounded-xl text-white product-kitchen-text cursor-pointer">Жавонлар</p>
+        <p data-target="kitchenShelf" class="text-md ml-2 font-normal bg-[#303030] inline-block py-2 px-6 rounded-xl text-white product-kitchen-text cursor-pointer">Токчалар</p>
+      </div>
+
+      <div style="position: absolute; top: 30px; left: 50%; transform: translateX(-50%);" class="w-full flex justify-center kitchen-list-selector-wrapper">
+        <p data-target="kitchenTable" class="text-md font-normal inline-block text-xl text-gray-900 product-kitchen-text-second cursor-pointer">Стол</p>
+        <p data-target="kitchenCupboard" class="text-md font-normal inline-block text-xl ml-6 text-gray-900 product-kitchen-text-second cursor-pointer active">Жавонлар</p>
+        <p data-target="kitchenShelf" class="text-md font-normal inline-block text-xl ml-6 text-gray-900 product-kitchen-text-second cursor-pointer">Токчалар</p>
+      </div>
+      
+      <ul id="kitchenTable" class="grid grid-flow-col xs+sm:grid-cols-2 md+lg:grid-cols-2 grid-cols-3 grid-rows-3 gap-4 kitchenLists" style="padding-top: 15px;">
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-1-row-1.jpg" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-1-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-1-row-3.jpg" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-2-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-2-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px 20px 0 0;">
+          <img src="./images/products/kitchenTable/col-2-row-3.png" alt="">
+        </li>   
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-3-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-3-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-3-row-3.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-4-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-4-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-4-row-3.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-5-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenTable/col-5-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 50px 0px 0px 0px;">
+          <img src="./images/products/kitchenTable/col-5-row-3.png" alt="">
+        </li>
+      </ul>
+      
+      <ul id="kitchenCupboard" class="grid grid-flow-col xs+sm:grid-cols-2 md+lg:grid-cols-2 grid-cols-3 grid-rows-3 gap-4 kitchenLists active" style="padding-top: 15px;">
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/cupboard/col-1-row-1.jpg" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/cupboard/col-1-row-2.jpg" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/cupboard/col-1-row-3.jpg" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/cupboard/col-2-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/cupboard/col-2-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/cupboard/col-2-row-3.png" alt="">
+        </li>   
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/cupboard/col-3-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/cupboard/col-3-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/cupboard/col-3-row-3.png" alt="">
+        </li>
+      </ul>
+      
+      <ul id="kitchenShelf" class="grid grid-flow-col xs+sm:grid-cols-2 md+lg:grid-cols-2 grid-cols-3 grid-rows-3 gap-4 kitchenLists" style="padding-top: 15px;">
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="160px" src="./images/products/kitchenShelf/col-1-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="135px" src="./images/products/kitchenShelf/col-1-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="150px" src="./images/products/kitchenShelf/col-1-row-3.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="103px" src="./images/products/kitchenShelf/col-2-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="170px" src="./images/products/kitchenShelf/col-2-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenShelf/col-2-row-3.png" alt="">
+        </li>   
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenShelf/col-3-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="170px" src="./images/products/kitchenShelf/col-3-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="155px" src="./images/products/kitchenShelf/col-3-row-3.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/kitchenShelf/col-4-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="170px" src="./images/products/kitchenShelf/col-4-row-2.png" alt="">
+        </li>
+      </ul>
+    </div>
+    
+    <!-- quritgich -->
+    <div id="dryer" class="pl-8 xs+sm:pl-0 product-list">
+      <ul class="grid grid-flow-col xs+sm:grid-cols-2 md+lg:grid-cols-2 grid-cols-3 grid-rows-3 gap-4 product-ul-list" style="padding-top: 55px;">
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/dryer/col11.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 0px">
+          <img  src="./images/products/dryer/col12.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/dryer/col13.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 30px;">
+          <img width="200px" src="./images/products/dryer/col21.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 0px;">
+          <img  src="./images/products/dryer/col22.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 0px 0 0 0;">
+          <img  src="./images/products/dryer/col23.png" alt="">
+        </li>   
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/dryer/col31.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 20px;">
+          <img src="./images/products/dryer/col32.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/dryer/col33.png" alt="">
+        </li>
+      </ul>
+    </div>
+    
+    <!-- // ilgich -->
+    <div id="hanger" class="pl-8 xs+sm:pl-0 product-list">
+      <ul class="grid product-ul-list grid-flow-col xs+sm:grid-cols-2 md+lg:grid-cols-2 grid-cols-3 grid-rows-3 gap-4" style="padding-top: 55px;">
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="105px" src="./images/products/hanger/col-1-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/hanger/col-1-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/hanger/col-1-row-3.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/hanger/col-2-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 0px;">
+          <img width="70px" src="./images/products/hanger/col-2-row-2.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 0px 0 0 0;">
+          <img width="200px" src="./images/products/hanger/col-2-row-3.png" alt="">
+        </li>   
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="100px" src="./images/products/hanger/col-3-row-1.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="100px" src="./images/products/hanger/col-3-row-2.jpg" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/hanger/col-3-row-3.png" alt="">
+        </li>
+      </ul>
+    </div>
+    
+    <!-- tosiqlar -->
+    <div id="obstacles" class="pl-8 xs+sm:pl-0 product-list">
+      <ul class="grid product-ul-list grid-flow-col xs+sm:grid-cols-2 md+lg:grid-cols-2 grid-cols-3 grid-rows-3 gap-4" style="padding-top: 55px;">
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px 20px 0px 20px">
+          <img width="140px" src="./images/products/obstacles/col11.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/obstacles/col12.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/obstacles/col13.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="200px" src="./images/products/obstacles/col21.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 0px;">
+          <img width="240px" src="./images/products/obstacles/col22.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-end" style="padding: 0 0 0 30px;">
+          <img src="./images/products/obstacles/col23.png" alt="">
+        </li>   
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 20px;">
+          <img src="./images/products/obstacles/col31.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 20px;">
+          <img src="./images/products/obstacles/col32.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 20px">
+          <img src="./images/products/obstacles/col33.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/obstacles/col41.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/obstacles/col42.png" alt="">
+        </li>
+      </ul>
+    </div>
+    
+    <!-- accessories -->
+    <div id="accessories" class="pl-8 xs+sm:pl-0 product-list">
+      <ul class="grid product-ul-list grid-flow-col xs+sm:grid-cols-2 md+lg:grid-cols-2 grid-cols-3 grid-rows-3 gap-4" style="padding-top: 55px;">
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="115px" src="./images/products/accessories/col11.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="176px" src="./images/products/accessories/col12.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="155px" src="./images/products/accessories/col13.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img width="170px" src="./images/products/accessories/col21.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 0px;">
+          <img width="100px" src="./images/products/accessories/col22.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 0px 0 0 0;">
+          <img width="130px" src="./images/products/accessories/col23.png" alt="">
+        </li>   
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img  src="./images/products/accessories/col31.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img  src="./images/products/accessories/col32.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/col33.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/col41.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/col42.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/col43.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/col51.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/col52.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/col53.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/61.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/62.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/63.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/71.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/72.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/73.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="130px"  src="./images/products/accessories/81.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/82.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="170px" src="./images/products/accessories/83.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/91.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/92.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/accessories/93.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="140px" src="./images/products/accessories/101.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="130px" src="./images/products/accessories/col102.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="140px" src="./images/products/accessories/col103.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="170px" src="./images/products/accessories/col111.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="190px" src="./images/products/accessories/col112.png" alt="">
+        </li>
+        <li class="border accessories-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img width="140px" src="./images/products/accessories/col13.png" alt="">
+        </li>
+      </ul>
+    </div>
+    
+    <!-- hdrostrelka -->
+    <div id="hdrostrelka " class="pl-8 xs+sm:pl-0 product-list">
+      <ul class="grid product-ul-list grid-flow-col xs+sm:grid-cols-2 md+lg:grid-cols-2 grid-cols-3 grid-rows-3 gap-4" style="padding-top: 55px;">
+        <li class="border hdrostrelka-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img  src="./images/products/hydrostrelka/col11.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/hydrostrelka/col12.png" alt="">
+        </li>
+        <li class="border hdrostrelka-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/hydrostrelka/col13.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/hydrostrelka/col21.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 0px;">
+          <img src="./images/products/hydrostrelka/col22.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 0px 0 0 0;">
+          <img src="./images/products/hydrostrelka/col23.png" alt="">
+        </li>   
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/hydrostrelka/col31.png" alt="">
+        </li>
+        <li class="border rounded-lg flex justify-center items-center" style="padding: 40px;">
+          <img src="./images/products/hydrostrelka/col32.png" alt="">
+        </li>
+        <li class="border hdrostrelka-item rounded-lg flex justify-center items-center" style="padding: 40px">
+          <img src="./images/products/hydrostrelka/col33.png" alt="">
+        </li>
+      </ul>
+    </div>
+    
+    
+  </div>
+</main>
+
+
+
+<footer class="bg-[#303030] mt-20 xs+sm:mt-8 md+lg:mt-8 py-4 relative">
+  <div class="xl:pt-4 xl:pb-6 2xl:pt-4 2xl:pb-6">
+    <div
+    class="
+    footer-grid
+    py-12
+    container
+    grid grid-cols-4 grid-rows-1
+    gap-4
+    text-[#DDD]
+    "
+    >
+    <div class="logo">
+      <img class="xs+sm:mx-auto" src="images/logo.png" alt="logo" />
+    </div>
+    <div
+    class="
+    grid grid-cols-2
+    text-white
+    gap-10
+    xs+sm:grid-cols-1
+    xs+sm:text-center
+    xs+sm:gap-0
+    "
+    >
+    <ul>
+      <li><a href="about.html">Биз ҳақимизда</a></li>
+      <li><a href="projects.html">Лойиҳалар</a></li>
+      <li><a href="accessories.html">Аксессуарлар</a></li>
+    </ul>
+    <ul>
+      <li><a href="products.html">Маҳсулотлар</a></li>
+      <li><a href="career.html">Карера</a></li>
+      <li><a href="contact.html">Aлоқа</a></li>
+    </ul>
+  </div>
+  <div class="contact flex justify-center flex-col text-center">
+    <div
+    class="
+    social-media
+    flex flex-row
+    justify-center
+    filter
+    brightness-0
+    "
+    >
+    <a href="https://www.facebook.com/Master-perila-103663791549336/"
+    ><img src="images/icons/social/facebook.svg" alt=""
+    /></a>
+    <a href="https://t.me/Master_Perila_Uzbekistan"
+    ><img src="images/icons/social/telegram.svg" alt=""
+    /></a>
+    <a href="https://www.instagram.com/master.perila/"
+    ><img src="images/icons/social/insta.svg" alt=""
+    /></a>
+  </div>
+  <a class="my-2" href="mailto:masterperila@gmail.com"
+  >masterperila@gmail.com</a
+  >
+  <a href="tel:+998652205999">+998 (65) 220-5999</a>
+</div>
+<div class="footer-form">
+  <h4 class="text-lg text-[#EEE] font-medium">
+    Ракамингизни колдиринг
+  </h4>
+  <input
+  type="email"
+  name="email"
+  for="submit"
+  id="email"
+  class="
+  w-9/12
+  rounded-md
+  py-[4px]
+  pl-2
+  my-3
+  bg-transparent
+  border-[#CCC] border-[1px]
+  "
+  placeholder="Ракам"
+  />
+  <button class="bg-primary text-white rounded-md py-1 px-4">
+    Богланинг
+  </button>
+</div>
+</div>
+</div>
+<div class="text-[#AAA] footer-ref flex justify-between container">
+  <p>©2021 Master Perila</p>
+  <a href="https://mount.uz" class="hover:text-white"
+  >MOUNTAIN | IT & Design</a
+  >
+</div>
+</footer>
+
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+    document.querySelector("body").style.overflow = "hidden";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+    document.querySelector("body").style.overflow = "auto";
+  }
+</script>
+
+<script>
+  const productItems = document.querySelectorAll('.product-item ');
+  const productLists = document.querySelectorAll('.product-list');
+  productItems.forEach(function(el) {
+    el.addEventListener('click', function(event) {
+      productLists.forEach(function(list) {
+        if (event.target.dataset.target == list.id) {
+          list.classList.add('active');
+          event.target.classList.add('active');
+        } else {
+          list.classList.remove('active');
+          event.target.classList.remove('active');
+        }
+      })
+    })
+  });
+  
+  const kitchenTexts = document.querySelectorAll('.product-kitchen-text');
+  const kitchenLists = document.querySelectorAll('.kitchenLists');
+  const kitchListSelectorWrapper = document.querySelector('.kitchen-list-selector-wrapper');
+  kitchenTexts.forEach(element => {
+    element.addEventListener('click', el => {
+      kitchenLists.forEach(function(list) {
+        if (el.target.dataset.target == list.id) {
+          list.classList.add('active');
+        } else {
+          list.classList.remove('active');
+        }
+      }) 
+    })
+  });
+  
+  
+  const kitchenTextsSecond = document.querySelectorAll('.product-kitchen-text-second');
+  kitchenTextsSecond.forEach(element => {
+    element.addEventListener('click', el => {
+      kitchenLists.forEach(function(list) {
+        if (el.target.dataset.target == list.id) {
+          list.classList.add('active');
+        } else {
+          list.classList.remove('active');
+        }
+      }) 
+    })
+  });
+  
+  const productSelectMiniText = document.querySelector('.product-select-mini-text');
+  const productSelectWrapper = document.querySelector('.product-select-mini-wrapper');
+  const productSelectItems = document.querySelectorAll('.product-select-mini-item');
+  productSelectMiniText.addEventListener('click', function(e) {
+    productSelectMiniText.classList.add('active');
+    productSelectWrapper.style.display = 'block';
+    if(e.target == productSelectMiniText) {
+      productSelectWrapper.style.display = 'block';
+      productSelectItems.forEach(function(element){
+        element.addEventListener('click', function(item) {
+          productLists.forEach(el => {
+            if (item.target.dataset.target == el.id) {
+              el.classList.add('active');
+              productSelectWrapper.style.display = 'none';
+              productSelectMiniText.textContent = item.target.textContent;
+              if(item.target.dataset.target == 'kitchenTools' && el.id == 'kitchenTools') {
+                kitchListSelectorWrapper.classList.add('active');
+              } else {
+                kitchListSelectorWrapper.classList.remove('active');
+              }
+            } else {
+              el.classList.remove('active')
+              productSelectMiniText.classList.remove('active');
+            }
+          });
+        })
+      })
+    }
+  })
+  
+  window.addEventListener('click', e => {
+    if (e.target == productSelectWrapper || e.target == body) {
+      productSelectWrapper.style.display = 'none';
+      productSelectMiniText.classList.remove('active');
+    }
+  })
+  
+</script>
+
+</body>
+</html>

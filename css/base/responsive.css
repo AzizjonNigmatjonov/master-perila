@@ -1,0 +1,80 @@
+nav .logo {
+  @apply xs+sm:w-16;
+}
+nav ul {
+  @apply xs+sm:hidden !important;
+}
+
+.header-card {
+  @apply xs+sm:w-full xs+sm:bottom-0 xs+sm:px-6 !important;
+}
+
+h1 {
+  @apply xs+sm:text-3xl  !important;
+}
+.header-content button {
+  @apply xs+sm:text-base;
+}
+
+.about {
+  @apply xs+lg:grid-cols-1 xl:gap-16 !important;
+}
+.about-heading {
+  @apply xs+lg:mt-6 xs+sm:mb-4 !important;
+}
+main {
+  @apply xs+sm:py-16 !important;
+}
+.service-cards {
+  @apply xs+sm:grid-cols-2 md+lg:grid-cols-3 xs+sm:gap-4 !important;
+}
+.card {
+  @apply xs+sm:gap-2 xs+sm:mb-0 md+lg:gap-2 md+lg:mb-4 xs+sm:mr-0 !important;
+}
+
+.why-h {
+  @apply xs+sm:mb-4 md+lg:mb-4 !important;
+}
+.why-grid {
+  @apply xs+sm:grid-cols-1 md+lg:gap-8 !important;
+}
+.why li {
+  @apply xs+sm:mr-0 md+lg:mr-8 !important;
+}
+.facts {
+  @apply xs+sm:px-0 md+lg:px-8 !important;
+}
+.facts-grid {
+  @apply xs+sm:grid-cols-2 xs+sm:gap-2 !important;
+}
+.facts-card {
+  @apply xs+sm:mr-0 !important;
+}
+.gallery {
+  @apply xs+sm:hidden !important;
+}
+.footer-grid {
+  @apply xs+sm:grid-cols-1 md+lg:grid-cols-2 xs+sm:gap-10 md+lg:gap-10 xs+sm:py-6 !important;
+}
+footer .logo {
+  @apply md+lg:mx-auto;
+}
+.footer-form {
+  @apply xs+sm:mx-auto;
+}
+.footer-form input {
+  @apply xs+sm:w-full;
+}
+.footer-form button {
+  @apply xs+sm:w-full xs+sm:text-center xs+sm:block !important;
+}
+.footer-ref {
+  @apply xs+sm:block xs+sm:text-center xs+sm:mt-2 !important;
+}
+
+.map-resp {
+  @apply xs+sm:h-[20rem] md:h-[25rem] !important;
+}
+.form-resp {
+  @apply xs+sm:w-11/12  lg:w-9/12 !important;
+}
