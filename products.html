@@ -10,6 +10,7 @@
   
   <link rel="stylesheet" href="css/tailwind.css" />
   <link rel="stylesheet" href="public/build/main.css" />
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 <body id="body">
   <header
@@ -45,24 +46,28 @@
       </li>
     </ul>
   </div>
-  <div id="myNav" class="overlay">
-    <nav class="border-b-2 border-gray-600">
-      <div
-      class="container flex items-center justify-between w-full py-6 mx-auto text-white "
-      >
-      <a href="index.html">
-        <img class="w-8 logo" src="images/logo.png" alt="logo" />
-      </a>
-      <a href="lang/uz" class="font-semibold text-center uppercase cursor-pointer hover:text-gray-600">Уз</a>
-      <a href="lang/ru" class="font-semibold uppercase cursor-pointer hover:text-gray-600">Ру</a>
-      <a
-      href="javascript:void(0);"
-      style="font-size: 25px"
-      onclick="closeNav()"
-      >
-      ⨉
+  <a href="javascript:void(0);" class="menu-icon" onclick="openNav()">
+    <img class="w-10" src="images/icons/menu-white.svg" alt="" />
+  </a>
+</nav>
+<div id="myNav" class="overlay">
+  <nav class="border-b-2 border-gray-600">
+    <div
+    class="container flex items-center justify-between w-full py-6 mx-auto text-white "
+    >
+    <a href="index.html">
+      <img class="w-8 logo" src="images/logo.png" alt="logo" />
     </a>
-  </div>
+    <a href="lang/uz" class="font-semibold text-center uppercase cursor-pointer hover:text-gray-600">Уз</a>
+    <a href="lang/ru" class="font-semibold uppercase cursor-pointer hover:text-gray-600">Ру</a>
+    <a
+    href="javascript:void(0);"
+    style="font-size: 25px"
+    onclick="closeNav()"
+    >
+    ⨉
+  </a>
+</div>
 </nav>
 <div class="container mx-auto overlay-content">
   <a href="index.html">Бош сахифа</a>
@@ -124,28 +129,28 @@
     <div class="flex flex-col xs+sm:hidden">
       <p class="text-xl font-semibold bg-[#303030] inline-block text-center py-4 px-6 rounded-xl text-white">Махсулотларимиз</p>
       <ul class="border inline-block rounded-xl px-6 py-6">
-        <li data-target="pipes" class="border py-2 px-4 rounded-xl product-item cursor-pointer">
+        <li data-target="pipes" class="border py-2 px-4 rounded-xl product-item product-item-one cursor-pointer">
           Трубалар ва Профиллар
         </li>
-        <li data-target="accessories" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+        <li data-target="accessories" class="border py-2 px-4 rounded-xl mt-4 product-item-second product-item cursor-pointer">
           Аксессуарлар
         </li>
-        <li data-target="kitchenTools" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer active" style="width: 220px;">
+        <li data-target="kitchenTools" class="border py-2 px-4 rounded-xl mt-4 product-item-third product-item cursor-pointer active" style="width: 220px;">
           Ошхона жихозлари
         </li>
-        <li data-target="dryer" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+        <li data-target="dryer" class="border py-2 px-4 rounded-xl mt-4 product-item-four product-item cursor-pointer">
           Куритгич
         </li>
-        <li data-target="hanger" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+        <li data-target="hanger" class="border py-2 px-4 rounded-xl mt-4 product-item-five product-item cursor-pointer">
           Илгич
         </li>
-        <li data-target="obstacles" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+        <li data-target="obstacles" class="border py-2 px-4 rounded-xl mt-4 product-item-six product-item cursor-pointer">
           Тосиклар
         </li>
-        <li data-target="layer" class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+        <li data-target="layer" class="border py-2 px-4 rounded-xl mt-4 product-item-seven product-item cursor-pointer">
           Лист
         </li>
-        <li data-target="hdrostrelka " class="border py-2 px-4 rounded-xl mt-4 product-item cursor-pointer">
+        <li data-target="hdrostrelka " class="border py-2 px-4 rounded-xl mt-4 product-item-eight product-item cursor-pointer">
           Гидрострелка
         </li>
       </ul>
@@ -355,15 +360,15 @@
     <div id="kitchenTools" class="pl-8 xs+sm:pl-0 product-list active">
       
       <div class="xs+sm:hidden">
-        <p data-target="kitchenTable" class="text-md font-normal bg-[#303030] inline-block py-2 px-6 rounded-xl text-white product-kitchen-text cursor-pointer">Стол</p>
-        <p data-target="kitchenCupboard" class="text-md ml-2 font-normal bg-[#303030] inline-block py-2 px-6 rounded-xl text-white product-kitchen-text cursor-pointer">Жавонлар</p>
-        <p data-target="kitchenShelf" class="text-md ml-2 font-normal bg-[#303030] inline-block py-2 px-6 rounded-xl text-white product-kitchen-text cursor-pointer">Токчалар</p>
+        <p data-target="kitchenTable" class="text-md font-normal bg-[#303030] inline-block py-2 px-6 rounded-xl text-white product-kitchen-text product-kitchen-text-first cursor-pointer">Стол</p>
+        <p data-target="kitchenCupboard" class="text-md ml-2 font-normal bg-[#303030] inline-block py-2 px-6 rounded-xl text-white product-kitchen-text product-kitchen-text-second cursor-pointer active">Жавонлар</p>
+        <p data-target="kitchenShelf" class="text-md ml-2 font-normal bg-[#303030] inline-block py-2 px-6 rounded-xl text-white product-kitchen-text product-kitchen-text-third cursor-pointer">Токчалар</p>
       </div>
       
       <div style="position: absolute; top: 30px; left: 50%; transform: translateX(-50%);" class="w-full flex justify-center kitchen-list-selector-wrapper">
-        <p data-target="kitchenTable" class="text-md font-normal inline-block text-xl text-gray-900 product-kitchen-text-second cursor-pointer">Стол</p>
-        <p data-target="kitchenCupboard" class="text-md font-normal inline-block text-xl ml-6 text-gray-900 product-kitchen-text-second cursor-pointer active">Жавонлар</p>
-        <p data-target="kitchenShelf" class="text-md font-normal inline-block text-xl ml-6 text-gray-900 product-kitchen-text-second cursor-pointer">Токчалар</p>
+        <p data-target="kitchenTable" class="text-md font-normal inline-block text-xl text-gray-900 product-kitchen-text-second product-kitchen-text-second-first cursor-pointer">Стол</p>
+        <p data-target="kitchenCupboard" class="text-md font-normal inline-block text-xl ml-6 text-gray-900 product-kitchen-text-second product-kitchen-text-second-second cursor-pointer active">Жавонлар</p>
+        <p data-target="kitchenShelf" class="text-md font-normal inline-block text-xl ml-6 text-gray-900 product-kitchen-text-second product-kitchen-text-second-third cursor-pointer">Токчалар</p>
       </div>
       
       <ul id="kitchenTable" class="grid grid-flow-col xs+sm:grid-cols-2 md+lg:grid-cols-2 grid-cols-3 grid-rows-3 gap-4 kitchenLists" style="padding-top: 15px;">
@@ -841,14 +846,68 @@
   const productItems = document.querySelectorAll('.product-item ');
   const productLists = document.querySelectorAll('.product-list');
   productItems.forEach(function(el) {
+    let productItemFirst = document.querySelector('.product-item-one');
+    let productItemSecond = document.querySelector('.product-item-second');
+    let productItemThird = document.querySelector('.product-item-third');
+    let productItemFour = document.querySelector('.product-item-four');
+    let productItemFive = document.querySelector('.product-item-five');
+    let productItemSix = document.querySelector('.product-item-six');
+    let productItemSeven = document.querySelector('.product-item-seven');
+    let productItemEight = document.querySelector('.product-item-eight');
     el.addEventListener('click', function(event) {
       productLists.forEach(function(list) {
         if (event.target.dataset.target == list.id) {
           list.classList.add('active');
-          event.target.classList.add('active');
+          if (event.target.dataset.target == 'pipes') {
+            productItemFirst.classList.add('active');
+          } else {
+            productItemFirst.classList.remove('active')
+          }
+
+          if (event.target.dataset.target == 'accessories') {
+            productItemSecond.classList.add('active');
+          } else {
+            productItemSecond.classList.remove('active');
+          }
+
+          if (event.target.dataset.target == 'kitchenTools') {
+            productItemThird.classList.add('active');
+          } else {
+            productItemThird.classList.remove('active');
+          }
+
+          if (event.target.dataset.target == 'dryer') {
+            productItemFour.classList.add('active');
+          } else {
+            productItemFour.classList.remove('active');
+          }
+
+          if (event.target.dataset.target == 'hanger') {
+            productItemFive.classList.add('active');
+          } else {
+            productItemFive.classList.remove('active');
+          }
+
+          if (event.target.dataset.target == 'obstacles') {
+            productItemSix.classList.add('active');
+          } else {
+            productItemSix.classList.remove('active');
+          }
+
+          if (event.target.dataset.target == 'layer') {
+            productItemSeven.classList.add('active');
+          } else {
+            productItemSeven.classList.remove('active');
+          }
+
+          if (event.target.dataset.target == 'hdrostrelka') {
+            productItemEight.classList.add('active');
+          } else {
+            productItemEight.classList.remove('active');
+          }
+          
         } else {
           list.classList.remove('active');
-          event.target.classList.remove('active');
         }
       })
     })
@@ -858,10 +917,31 @@
   const kitchenLists = document.querySelectorAll('.kitchenLists');
   const kitchListSelectorWrapper = document.querySelector('.kitchen-list-selector-wrapper');
   kitchenTexts.forEach(element => {
+    let productKitchenTextFirst = document.querySelector('.product-kitchen-text-first');
+    let productKitchenTextSecond = document.querySelector('.product-kitchen-text-second');
+    let productKitchenTextThird = document.querySelector('.product-kitchen-text-third');
     element.addEventListener('click', el => {
       kitchenLists.forEach(function(list) {
         if (el.target.dataset.target == list.id) {
           list.classList.add('active');
+          if (el.target.dataset.target == 'kitchenTable') {
+            productKitchenTextFirst.classList.add('active');
+          } else {
+            productKitchenTextFirst.classList.remove('active');
+          }
+
+          if (el.target.dataset.target == 'kitchenCupboard') {
+            productKitchenTextSecond.classList.add('active');
+          } else {
+            productKitchenTextSecond.classList.remove('active');
+          }
+
+          if (el.target.dataset.target == 'kitchenShelf') {
+            productKitchenTextThird.classList.add('active');
+          } else {
+            productKitchenTextThird.classList.remove('active');
+          }
+          
         } else {
           list.classList.remove('active');
         }
@@ -873,9 +953,29 @@
   const kitchenTextsSecond = document.querySelectorAll('.product-kitchen-text-second');
   kitchenTextsSecond.forEach(element => {
     element.addEventListener('click', el => {
+      let productKitchenTextSecondFirst = document.querySelector('.product-kitchen-text-second-first');
+      let productKitchenTextSecondSecond = document.querySelector('.product-kitchen-text-second-second');
+      let productKitchenTextSecondThird = document.querySelector('.product-kitchen-text-second-third');
       kitchenLists.forEach(function(list) {
         if (el.target.dataset.target == list.id) {
           list.classList.add('active');
+          if (el.target.dataset.target == 'kitchenTable') {
+            productKitchenTextSecondFirst.classList.add('active');
+          } else {
+            productKitchenTextSecondFirst.classList.remove('active');
+          }
+
+          if (el.target.dataset.target == 'kitchenCupboard') {
+            productKitchenTextSecondSecond.classList.add('active');
+          } else {
+            productKitchenTextSecondSecond.classList.remove('active');
+          }
+
+          if (el.target.dataset.target == 'kitchenShelf') {
+            productKitchenTextSecondThird.classList.add('active');
+          } else {
+            productKitchenTextSecondThird.classList.remove('active');
+          }
         } else {
           list.classList.remove('active');
         }

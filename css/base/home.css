@@ -129,3 +129,7 @@ footer ul li {
 .projects div {
   @apply rounded-md;
 }
+
+.active-tab-link {
+  @apply text-white bg-black;
+}

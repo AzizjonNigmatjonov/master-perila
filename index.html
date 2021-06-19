@@ -812,20 +812,25 @@ crossorigin="anonymous"
   const clientsSection = document.querySelector('.clients-swipper');
   const gallerySection = document.querySelector('.gallery')
   let video = document.querySelector('.main-video-wrapper inframe')
-  window.addEventListener('click', e => {
-    if (e.target == mainVideoWrapper) {
-      mainVideoWrapper.style.display = 'none';
-      header.classList.remove('active');
-      main.classList.remove('active');
-      section.classList.remove('active');
-      footer.classList.remove('active');
-      whyWe.classList.remove('active')
-      factsSection.classList.remove('active');
-      clientsSection.classList.remove('active');
-      gallerySection.classList.remove('active');
-      video.pause();
-      video.currentTime = 0;
-    }
+  mainVideoWrapper.addEventListener('click', e => {
+    mainVideoWrapper.style.display = 'none';
+    video.pause();
+    video.currentTime = 0;
+  })
+    window.addEventListener('click', e => {
+      if (e.target == mainVideoWrapper) {
+        // mainVideoWrapper.style.display = 'none';
+        header.classList.remove('active');
+        main.classList.remove('active');
+        section.classList.remove('active');
+        footer.classList.remove('active');
+        whyWe.classList.remove('active')
+        factsSection.classList.remove('active');
+        clientsSection.classList.remove('active');
+        gallerySection.classList.remove('active');
+        video.pause();
+        video.currentTime = 0;
+      }
     if (e.target.id == 'headerVideoBtn' || e.target.id == 'headerVideoImg') {
       mainVideoWrapper.style.display = 'block';
       header.classList.add('active');

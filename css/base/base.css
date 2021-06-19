@@ -400,6 +400,9 @@ h6 {
   background-color: #B90004;
 }
 
+.product-kitchen-text.active {
+  background-color: #B90004;
+}
 
 .kitchenLists {
   display: none !important;
